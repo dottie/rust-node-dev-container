@@ -29,8 +29,8 @@ RUN cp /root/.oh-my-bash/share/oh-my-bash/bashrc ~/.bashrc
 ENV NVM_DIR /root/.nvm
 ENV NVM_NODEJS_ORG_MIRROR=https://unofficial-builds.nodejs.org/download/release
 # ENV NODE_VERSION 20.10.0
-ARG NODE_VERSION=24
-ARG NVM_VERSION=0.40.3
+ARG NODE_VERSION=${templateOption:nodeVersion}
+ARG NVM_VERSION=${templateOption:nvmVersion}
 
 RUN mkdir -p $NVM_DIR && \
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v$NVM_VERSION/install.sh | bash && \

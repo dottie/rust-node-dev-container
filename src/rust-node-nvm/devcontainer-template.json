@@ -1,0 +1,27 @@
+{
+  "id": "rust-node-nvm",
+  "version": "1.0.0",
+  "name": "Rust and Node.js using NVM",
+  "description": "Develop Rust and Node.js applications with Git, Python, and more. Includes essentials like Git LFS, Oh My Bash, and common build tools.",
+  "documentationURL": "https://github.com/dottie/rust-node-dev-container",
+  "publisher": "zhwachen",
+  "licenseURL": "https://github.com/dottie/rust-node-dev-container/blob/main/LICENSE",
+  "options": {
+    "nodeVersion": {
+      "type": "string",
+      "description": "Node.js version to install, or enter your own",
+      "default": "24",
+      "proposals": ["18", "20", "21"]
+    },
+    "nvmVersion": {
+            "type": "string",
+            "description": "Select a NVM version, or enter your own",
+            "proposals": [
+                "0.40.3",
+                "0.39.7"
+            ],
+            "default": "0.40.3"
+        }
+  },
+  "platforms": ["Any"]
+}
