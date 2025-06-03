@@ -32,10 +32,20 @@
 	"customizations": {
 		"vscode": {
 			"settings": {
+				// "terminal.integrated.shell.linux": "/bin/zsh",
+				"terminal.integrated.shell.linux": "/bin/bash",
 				"terminal.integrated.profiles.linux": {
 					"bash": {
 						"path": "/bin/bash"
 					}
+				},
+				"files.eol": "\n",
+				"files.insertFinalNewline": true,
+				"files.trimFinalNewlines": true,
+				"files.trimTrailingWhitespace": true,
+				"editor.formatOnSave": true,
+				"editor.codeActionsOnSave": {
+					"source.organizeImports": "explicit"
 				}
 			},
 			"extensions": [
