@@ -26,7 +26,7 @@ RUN mkdir -p /root/.oh-my-bash && bash -c "$(curl -fsSL https://raw.githubuserco
 RUN cp /root/.oh-my-bash/share/oh-my-bash/bashrc ~/.bashrc
 
 # Install nvm, node and npm
-ENV NVM_DIR /root/.nvm
+ENV NVM_DIR=/root/.nvm
 ENV NVM_NODEJS_ORG_MIRROR=https://unofficial-builds.nodejs.org/download/release
 # ENV NODE_VERSION 20.10.0
 ARG NODE_VERSION=24
